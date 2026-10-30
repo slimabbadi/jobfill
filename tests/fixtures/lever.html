@@ -1,0 +1,29 @@
+<form>
+  <ul>
+    <li class="application-question"><div class="application-label">Full name<span class="required">✱</span></div>
+      <div class="application-field"><input type="text" name="name" required></div></li>
+    <li class="application-question"><div class="application-label">Email<span class="required">✱</span></div>
+      <div class="application-field"><input type="email" name="email" required></div></li>
+    <li class="application-question"><div class="application-label">Phone</div>
+      <div class="application-field"><input type="text" name="phone"></div></li>
+    <li class="application-question"><div class="application-label">Current company</div>
+      <div class="application-field"><input type="text" name="org"></div></li>
+    <li class="application-question"><div class="application-label">LinkedIn URL</div>
+      <div class="application-field"><input type="text" name="urls[LinkedIn]"></div></li>
+    <li class="application-question"><div class="application-label">GitHub URL</div>
+      <div class="application-field"><input type="text" name="urls[GitHub]"></div></li>
+    <li class="application-question custom-question">
+      <div class="application-label"><div class="text">Are you willing to relocate to Stockholm?<span class="required">✱</span></div></div>
+      <div class="application-field"><ul data-qa="multiple-choice">
+        <li><label><input type="radio" name="cards[abc][field0]" value="Yes"><span class="application-answer-alternative">Yes</span></label></li>
+        <li><label><input type="radio" name="cards[abc][field0]" value="No"><span class="application-answer-alternative">No</span></label></li>
+      </ul></div></li>
+    <li class="application-question custom-question">
+      <div class="application-label"><div class="text">Which time zone do you work in?</div></div>
+      <div class="application-field"><ul data-qa="multiple-choice">
+        <li><label><input type="radio" name="cards[abc][field1]" value="CET"><span>CET</span></label></li>
+        <li><label><input type="radio" name="cards[abc][field1]" value="EST"><span>EST</span></label></li>
+      </ul></div></li>
+  </ul>
+  <button type="submit">Submit application</button>
+</form>

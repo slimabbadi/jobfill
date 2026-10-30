@@ -1,0 +1,81 @@
+body {
+  width: 340px;
+  background: var(--surface);
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  background: var(--ink);
+  color: #fff;
+}
+
+.popup-head strong {
+  font-family: var(--display);
+  font-size: 1.1rem;
+}
+
+.popup-head .btn.quiet {
+  color: #c9d6f5;
+}
+
+.popup-job {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-bottom: 1px solid var(--line);
+}
+
+.popup-job .company {
+  font-weight: 700;
+}
+
+.status-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.popup-actions {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.popup-actions .pair {
+  display: flex;
+  gap: 8px;
+}
+
+.popup-actions .pair .btn {
+  flex: 1;
+}
+
+.popup-message {
+  margin: 0 14px 12px;
+  font-size: 0.88rem;
+  background: var(--paper);
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+
+.popup-foot {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
